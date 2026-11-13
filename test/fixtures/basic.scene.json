@@ -1,0 +1,18 @@
+{
+  "_format": "simarena/scene@1.0",
+  "name": "basic",
+  "entities": [
+    {
+      "name": "floor",
+      "transform": { "pos": [0, 0, 0] },
+      "geoms": [{ "type": "plane", "size": [10, 10], "color": "#2d3e5e", "group": "visual" }],
+      "physics": { "dynamic": false }
+    },
+    {
+      "name": "cube",
+      "transform": { "pos": [0, 0, 0.1] },
+      "geoms": [{ "type": "box", "size": [0.1, 0.1, 0.1], "color": "#ff0000" }],
+      "physics": { "type": "rigid", "motion": "dynamic", "mass": 0.5 }
+    }
+  ]
+}
